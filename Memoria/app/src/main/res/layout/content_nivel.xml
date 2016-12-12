@@ -13,8 +13,23 @@
     tools:context="com.example.usuario.memoria.Nivel"
     tools:showIn="@layout/activity_nivel">
 
-    <TextView
+    <Button
+        android:text="Sonido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/button"
+        app:layout_anchorGravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Tiempo restante: "
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="115dp" />
+
 </RelativeLayout>

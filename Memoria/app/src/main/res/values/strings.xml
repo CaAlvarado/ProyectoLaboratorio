@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Memoria</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Ajustes</string>
     <string name="title_activity_settings">Ajustes</string>
 
     <!-- Strings related to Settings -->
@@ -31,6 +31,43 @@
     </string-array>
 
     <string name="pref_title_tiempo">"Tiempo"</string>
+    <string name="pref_title_minutos">"Minutos"</string>
+    <string-array name="pref_tiempo_titles">
+        <item>Sin tiempo</item>
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>3 minutos</item>
+    </string-array>
+    <string-array name="pref_tiempo_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="pref_title_dificultad">"Dificultad"</string>
+    <string-array name="pref_dificultad_titles">
+        <item>Inicial</item>
+        <item>Medio</item>
+        <item>Avanzado</item>
+        <item>Experto</item>
+    </string-array>
+    <string-array name="pref_dificultad_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="pref_title_voz">"Voz"</string>
+    <string-array name="pref_voz_titles">
+        <item>Masculina</item>
+        <item>Femenina</item>
+    </string-array>
+    <string-array name="pref_voz_values">
+        <item>m</item>
+        <item>f</item>
+    </string-array>
 
     <!-- Example settings for Data & Sync -->
     <string name="pref_header_data_sync">Data &amp; sync</string>

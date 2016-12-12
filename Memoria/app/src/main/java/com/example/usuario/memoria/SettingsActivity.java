@@ -4,6 +4,7 @@ package com.example.usuario.memoria;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -38,6 +39,10 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
     /**
      * A preference value change listener that updates the preference's summary
      * to reflect its new value.
+     */
+
+    /**
+     * Ver como se aplican los cambios al volver atras con el boton del sistema en lugar del boton UP
      */
     private static Preference.OnPreferenceChangeListener sBindPreferenceSummaryToValueListener = new Preference.OnPreferenceChangeListener() {
         @Override
@@ -189,8 +194,9 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             // to their values. When their values change, their summaries are
             // updated to reflect the new value, per the Android Design
             // guidelines.
-            bindPreferenceSummaryToValue(findPreference("example_text"));
-            bindPreferenceSummaryToValue(findPreference("example_list"));
+            bindPreferenceSummaryToValue(findPreference("tiempo_list"));
+            bindPreferenceSummaryToValue(findPreference("dificultad_list"));
+            bindPreferenceSummaryToValue(findPreference("voz_list"));
         }
 
         @Override
